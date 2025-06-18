@@ -66,4 +66,18 @@ public class BinaryTree {
             System.out.print(nodo.getValor() + " "); 
         }
     }
+
+    public boolean finddeValue(int value) {
+        return buscarValorRec(root, value);
+    }
+
+    private boolean buscarValorRec(Nodes nodo, int value) {
+        if (nodo == null) {
+            return false;
+        }
+        if (value == nodo.getValor()) {
+            return true;
+        }
+        return value < nodo.getValor() ? buscarValorRec(nodo.getNodoiz(), value) : buscarValorRec(nodo.getNododere(), value);
+    }
 }

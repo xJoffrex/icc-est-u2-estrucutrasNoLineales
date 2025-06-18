@@ -19,6 +19,17 @@ public class App {
         ab.imprimirInOrder();
         System.out.println("Post Order");
         ab.imprimirPostOrder();
+
+        if (ab.finddeValue(23)){
+            System.out.println("Encontro el valor 23"); 
+        }else{
+            System.out.println("No se encontro el valor 23");
+        }
+        if (ab.finddeValue(77)){
+            System.out.println("Encintro el valor 77");
+        }else{
+            System.out.println("No se encontro el valor 77");
+        }
         
     }
 }
