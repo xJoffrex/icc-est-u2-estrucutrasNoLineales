@@ -39,4 +39,4 @@ El proyecto está organizado bajo el patrón **Modelo-Controlador**, distribuyé
 ---
 ## Captura de Pantalla
 
-[Captura De Terminal](src/Materia/App.java)
+[Captura De Terminal](adada.png)
