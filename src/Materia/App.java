@@ -13,23 +13,43 @@ public class App {
         ab.insert(14);
         ab.insert(19);
        
-        System.out.println("Pre Order");
-        ab.imprimirPreOrder();
+       // System.out.println("Pre Order");
+      //  ab.imprimirPreOrder();
+        System.out.println("Peso: " + ab.getPeso());
+        System.out.println("Altura total del arbol: " + ab.getHeightTree());
         System.out.println("In Order");
-        ab.imprimirInOrder();
-        System.out.println("Post Order");
-        ab.imprimirPostOrder();
+        ab.imprimirInOrderNormal();
+        System.out.println("In Order Altura");
+        ab.imprimirInOrderAltura();
+        System.out.println("In Order Equilibrio");
+        ab.imprimirInOrderRecEquilibrio();
 
-        if (ab.finddeValue(23)){
-            System.out.println("Encontro el valor 23"); 
-        }else{
-            System.out.println("No se encontro el valor 23");
-        }
-        if (ab.finddeValue(77)){
-            System.out.println("Encintro el valor 77");
-        }else{
-            System.out.println("No se encontro el valor 77");
-        }
+        boolean balanceado = ab.estaBalanceado();
+        System.out.println("Arbol esta equilibrado = " + balanceado);
+
+        System.out.println("Existe el nodo 15 = " + ab.finddeValue(15));
+        System.out.println("Agrega Nodo 15");
+        ab.insert(15);
+        System.out.println("Existe el nodo 15 = " + ab.finddeValue(15));
+        ab.imprimirInOrderConEquilibrioYNodosDesequilibrados();
+
+
+
+      //  System.out.println("Post Order");
+       // ab.imprimirPostOrder();
+
+      //  if (ab.finddeValue(23)){
+       //     System.out.println("Encontro el valor 23"); 
+       // }else{
+         //   System.out.println("No se encontro el valor 23");
+      //  }
+        //f (ab.finddeValue(77)){
+         //   System.out.println("Encintro el valor 77");
+        //}else{
+       //     System.out.println("No se encontro el valor 77");
+       // }
+        
+
         
     }
 }
