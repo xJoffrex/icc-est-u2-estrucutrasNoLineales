@@ -1,9 +1,9 @@
+import Controllers.AVLTree;
 import Controllers.BinaryTree;
 
 public class App {
     public static void main(String[] args) {
         BinaryTree ab = new BinaryTree();
-
         ab.insert(50);
         ab.insert(17);
         ab.insert(76);
@@ -33,8 +33,13 @@ public class App {
         System.out.println("Existe el nodo 15 = " + ab.finddeValue(15));
         ab.imprimirInOrderConEquilibrioYNodosDesequilibrados();
 
+        AVLTree arbol = new AVLTree();
 
+        arbol.insert(5);
+        arbol.insert(20);
+        arbol.insert(15);
 
+        System.out.println("\nAltura final del arbol: " + arbol.getHeightTree());
       //  System.out.println("Post Order");
        // ab.imprimirPostOrder();
 

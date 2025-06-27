@@ -40,3 +40,4 @@ El proyecto está organizado bajo el patrón **Modelo-Controlador**, distribuyé
 ## Captura de Pantalla
 
 [Captura De Terminal](adada.png)
+[Captura De Terminal](aaaa.png)

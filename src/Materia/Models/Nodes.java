@@ -4,7 +4,7 @@ public class Nodes {
     private int valor;
     private Nodes nodoiz;
     private Nodes nododere;
-
+    private int Height;
 
 
     
@@ -33,12 +33,23 @@ public class Nodes {
     public void setNododere(Nodes nododere) {
         this.nododere = nododere;
     }
+    
+    public int getHeight() {
+        return Height;
+    }
 
+
+    public void setHeight(int height) {
+        Height = height;
+    }
 
     @Override
     public String toString() {
         return "Nodes [valor=" + valor + "]";
     }
+
+
+
 
 
     
